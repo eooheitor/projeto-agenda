@@ -18,7 +18,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/agenda', [AgendaController::class, 'store'])->name('agenda.store');
 });
 
-Route::get('/agendamentos', [AgendamentoController::class, 'index'])->middleware(['auth', 'verified'])->name('consulta');
+Route::get('/agendamentos', [AgendamentoController::class, 'index'])->middleware(['auth', 'verified'])->name('agendamentos');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
