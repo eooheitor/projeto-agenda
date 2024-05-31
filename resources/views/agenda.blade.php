@@ -21,7 +21,7 @@
             @endif
             @if (session('success'))
                 <div class="toast align-items-end text-white bg-success border-0" role="alert" aria-live="assertive"
-                    aria-atomic="true" data-delay="5000" style="position: fixed; right: 15px;">
+                    aria-atomic="true" data-delay="200" style="position: fixed; right: 15px;">
                     <div class="d-flex">
                         <div class="toast-body">
                             {{ session('success') }}
@@ -33,7 +33,7 @@
             @endif
             @if (session('error'))
                 <div class="toast align-items-end text-white bg-danger border-0" role="alert" aria-live="assertive"
-                    aria-atomic="true" data-delay="5000" style="position: fixed; right: 15px;">
+                    aria-atomic="true" data-delay="200" style="position: fixed; right: 15px;">
                     <div class="d-flex">
                         <div class="toast-body">
                             {{ session('error') }}
@@ -114,9 +114,9 @@
                             <option value="3">3 Pessoas</option>
                             <option value="4">4 Pessoas</option>
                             <option value="5">5 Pessoas</option>
-                            <option value="Até 10">Até 10 Pessoas</option>
-                            <option value="Até 15">Até 15 Pessoas</option>
-                            <option value="Até 20">Até 20 Pessoas</option>
+                            <option value="10">Até 10 Pessoas</option>
+                            <option value="15">Até 15 Pessoas</option>
+                            <option value="20">Até 20 Pessoas</option>
                         </select>
                     </div>
                     <div class="col-12">
